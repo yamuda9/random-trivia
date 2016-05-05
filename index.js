@@ -80,10 +80,10 @@ var questions = [
     },
     {
         "How many strings are there on a standard violin?": [
-            "4",
-            "3",
-            "5",
-            "6"
+            "4 strings",
+            "3 strings",
+            "5 strings",
+            "6 strings"
         ]
     },
     {
