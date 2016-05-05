@@ -181,86 +181,6 @@ var questions = [
             "Yoshisuke Aikawa and Meitaro Takeuchi",
             "Rokuro Aoyama and Masujiro Hashimoto"
         ]
-    },
-    { // 20 questions ^^^^^^^^ | 21+ questions vvvvvvvvv
-        "In the 1964 movie, what does the Misfit Elf want to be instead of a Santa Elf?": [
-            "Dentist",
-            "Reindeer",
-            "Toy maker",
-            "Candlestick maker"
-        ]
-    },
-    {
-        "In the 1964 movie,what was the Bumble's one weakness?": [
-            "Could not swim",
-            "Always hungry",
-            "Candy canes",
-            "Cross eyed"
-        ]
-    },
-    {
-        "In the 1964 movie, what is Yukon Cornelius really in search of?": [
-            "Peppermint",
-            "Gold",
-            "India",
-            "Polar Bears"
-        ]
-    },
-    {
-        "In the 1964 movie, why is the train on the Island of Misfit Toys?": [
-            "Square wheels",
-            "No Engine",
-            "Paint does not match",
-            "It does not toot"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the Jack in the Box?": [
-            "Charlie",
-            "Sam",
-            "Billy",
-            "Jack"
-        ]
-    },
-    {
-        "In the 1964 movie, why did Santa Claus almost cancel Christmas?": [
-            "Storm",
-            "No snow",
-            "No toys",
-            "The Reindeer were sick"
-        ]
-    },
-    {
-        "In the 1964 movie, what animal noise did the elf make to distract the Bumble?": [
-            "Oink",
-            "Growl",
-            "Bark",
-            "Meow"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the prospector?": [
-            "Yukon Cornelius",
-            "Slider Sam",
-            "Bumble",
-            "Jack"
-        ]
-    },
-    {
-        "How far do reindeer travel when they migrate?": [
-            "3000 miles",
-            "700 miles",
-            "500 miles",
-            "0 miles"
-        ]
-    },
-    {
-        "How fast can a reindeer run?": [
-            "48 miles per hour",
-            "17 miles per hour",
-            "19 miles per hour",
-            "14 miles per hour"
-        ]
     }
 ];
 
@@ -385,11 +305,11 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 var ANSWER_COUNT = 4;
 var GAME_LENGTH = 5;
-var CARD_TITLE = "Reindeer Games"; // Be sure to change this for your skill.
+var CARD_TITLE = "Random Trivia"; // Be sure to change this for your skill.
 
 function getWelcomeResponse(callback) {
     var sessionAttributes = {},
-        speechOutput = "Reindeer Games. I will ask you " + GAME_LENGTH.toString()
+        speechOutput = "Random Trivia. I will ask you " + GAME_LENGTH.toString()
             + " questions, try to get as many right as you can. Just say the number of the answer. Let's begin. ",
         shouldEndSession = false,
 
@@ -649,4 +569,3 @@ function buildResponse(sessionAttributes, speechletResponse) {
         response: speechletResponse
     };
 }
-
